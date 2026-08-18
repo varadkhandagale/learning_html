@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form Practice</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="/submit" method="post">
+
+        <!-- ============================= -->
+        <!-- 1. PERSONAL INFORMATION -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Text -->
+            <label for="fullname">Full Name:</label>
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+            >
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+            >
+            <br><br>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                required
+            >
+            <br><br>
+
+            <!-- Telephone -->
+            <label for="phone">Phone Number:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+91 9876543210"
+            >
+            <br><br>
+
+            <!-- Date -->
+            <label for="dob">Date of Birth:</label>
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+            >
+            <br><br>
+
+            <!-- Time -->
+            <label for="preferred-time">Preferred Contact Time:</label>
+            <input
+                type="time"
+                id="preferred-time"
+                name="preferred-time"
+            >
+            <br><br>
+
+            <!-- Gender - Radio Buttons -->
+            <p>Gender:</p>
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+            >
+            <label for="male">Male</label>
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+            >
+            <label for="female">Female</label>
+
+            <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="other"
+            >
+            <label for="other">Other</label>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 2. ADDRESS -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Address</legend>
+
+            <!-- Textarea -->
+            <label for="address">Full Address:</label>
+            <br>
+
+            <textarea
+                id="address"
+                name="address"
+                rows="5"
+                cols="40"
+                placeholder="Enter your complete address"
+            ></textarea>
+
+            <br><br>
+
+            <!-- Select -->
+            <label for="country">Country:</label>
+
+            <select id="country" name="country">
+
+                <option value="">-- Select Country --</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+
+            </select>
+
+            <br><br>
+
+            <!-- Multiple Select -->
+            <label for="languages">Languages You Know:</label>
+            <br>
+
+            <select
+                id="languages"
+                name="languages"
+                multiple
+                size="4"
+            >
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="marathi">Marathi</option>
+                <option value="tamil">Tamil</option>
+                <option value="telugu">Telugu</option>
+                <option value="bengali">Bengali</option>
+            </select>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 3. EDUCATION -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Education</legend>
+
+            <label for="qualification">
+                Highest Qualification:
+            </label>
+
+            <select id="qualification" name="qualification">
+
+                <option value="">-- Select --</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelors">Bachelor's Degree</option>
+                <option value="masters">Master's Degree</option>
+                <option value="phd">PhD</option>
+
+            </select>
+
+            <br><br>
+
+            <!-- Number -->
+            <label for="percentage">
+                Percentage / CGPA:
+            </label>
+
+            <input
+                type="number"
+                id="percentage"
+                name="percentage"
+                min="0"
+                max="100"
+                step="0.01"
+                placeholder="85.50"
+            >
+
+            <br><br>
+
+            <!-- Datalist -->
+            <label for="course">
+                Select Your Course:
+            </label>
+
+            <input
+                list="courses"
+                id="course"
+                name="course"
+                placeholder="Start typing..."
+            >
+
+            <datalist id="courses">
+                <option value="Computer Science">
+                <option value="Information Technology">
+                <option value="Electronics">
+                <option value="Mechanical Engineering">
+                <option value="Civil Engineering">
+                <option value="Business Administration">
+                <option value="Data Science">
+            </datalist>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 4. SKILLS -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Technical Skills</legend>
+
+            <p>Select your skills:</p>
+
+            <!-- Checkboxes -->
+
+            <input
+                type="checkbox"
+                id="html"
+                name="skills"
+                value="html"
+            >
+            <label for="html">HTML</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="css"
+                name="skills"
+                value="css"
+            >
+            <label for="css">CSS</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="javascript"
+                name="skills"
+                value="javascript"
+            >
+            <label for="javascript">JavaScript</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="python"
+                name="skills"
+                value="python"
+            >
+            <label for="python">Python</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="java"
+                name="skills"
+                value="java"
+            >
+            <label for="java">Java</label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="sql"
+                name="skills"
+                value="sql"
+            >
+            <label for="sql">SQL</label>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 5. EXPERIENCE -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Experience</legend>
+
+            <!-- Range -->
+            <label for="experience">
+                Years of Experience:
+            </label>
+
+            <input
+                type="range"
+                id="experience"
+                name="experience"
+                min="0"
+                max="20"
+                value="2"
+            >
+
+            <br><br>
+
+            <!-- Month -->
+            <label for="joining-month">
+                Expected Joining Month:
+            </label>
+
+            <input
+                type="month"
+                id="joining-month"
+                name="joining-month"
+            >
+
+            <br><br>
+
+            <!-- Week -->
+            <label for="available-week">
+                Available Week:
+            </label>
+
+            <input
+                type="week"
+                id="available-week"
+                name="available-week"
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 6. FILE UPLOAD -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Documents</legend>
+
+            <label for="resume">
+                Upload Resume:
+            </label>
+
+            <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf,.doc,.docx"
+            >
+
+            <br><br>
+
+            <label for="photo">
+                Upload Profile Photo:
+            </label>
+
+            <input
+                type="file"
+                id="photo"
+                name="photo"
+                accept="image/*"
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 7. WEBSITE / URL -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Online Profiles</legend>
+
+            <label for="website">
+                Personal Website:
+            </label>
+
+            <input
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://example.com"
+            >
+
+            <br><br>
+
+            <label for="github">
+                GitHub Profile:
+            </label>
+
+            <input
+                type="url"
+                id="github"
+                name="github"
+                placeholder="https://github.com/username"
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 8. COLOR -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label for="color">
+                Favorite Color:
+            </label>
+
+            <input
+                type="color"
+                id="color"
+                name="color"
+                value="#3498db"
+            >
+
+            <br><br>
+
+            <!-- Search -->
+            <label for="search">
+                Search:
+            </label>
+
+            <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Search something..."
+            >
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 9. PROGRESS + METER -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Application Status</legend>
+
+            <p>Application Progress:</p>
+
+            <progress
+                id="progress"
+                value="70"
+                max="100"
+            >
+                70%
+            </progress>
+
+            <span>70%</span>
+
+            <br><br>
+
+            <p>Skill Level:</p>
+
+            <meter
+                min="0"
+                max="100"
+                value="75"
+                low="30"
+                high="80"
+                optimum="90"
+            >
+                75%
+            </meter>
+
+            <span>75 / 100</span>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 10. AGREEMENT -->
+        <!-- ============================= -->
+
+        <fieldset>
+            <legend>Confirmation</legend>
+
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                value="accepted"
+                required
+            >
+
+            <label for="terms">
+                I agree to the terms and conditions.
+            </label>
+
+            <br><br>
+
+            <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="yes"
+            >
+
+            <label for="newsletter">
+                Subscribe me to the newsletter.
+            </label>
+
+        </fieldset>
+
+
+        <br>
+
+
+        <!-- ============================= -->
+        <!-- 11. HIDDEN VALUE -->
+        <!-- ============================= -->
+
+        <input
+            type="hidden"
+            name="form-version"
+            value="1.0"
+        >
+
+
+        <!-- ============================= -->
+        <!-- 12. BUTTONS -->
+        <!-- ============================= -->
+
+        <br>
+
+        <button type="submit">
+            Submit Application
+        </button>
+
+        <button type="reset">
+            Reset Form
+        </button>
+
+        <button type="button">
+            Normal Button
+        </button>
+
+    </form>
+
+</body>
+</html>
