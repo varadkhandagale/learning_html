@@ -1,72 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <!-- Header start -->
-        <header>
-            <nav style="text-decoration: none;">
-                <a href="./index.html">Home</a> |
-                <a href="./about_us.html">About</a>|
-                <a href="./services.html">Services</a> |
-                <a href="./products.html">Products</a> |
-                <a href="./contact_us.html">Contact</a> |
-                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-            </nav>
-        </header>
-        <!-- Header End -->
-        <main>
 
-            <section>
-                <article>
-                    <h1>Hello Varad</h1>
-                    <h2>This is Home page!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Quisquam sit odio voluptatum architecto ab voluptatibus
-                        similique excepturi, ipsa alias, facilis eum provident
-                        facere debitis explicabo corrupti porro! Ipsa reiciendis
-                        eum reprehenderit itaque quaerat aperiam, quos earum
-                        pariatur blanditiis excepturi tenetur nulla dicta id
-                        numquam alias aut velit, explicabo aspernatur
-                        obcaecati!</p>
-                    <picture>
-                        <img src="./images/image_c4468f1a.png"
-                            alt="nature_image">
-                    </picture>
-                    <hr>
-                    <h2>Figure caption </h2>
-                    <p>Lorem ipsum for the image dolor, sit amet consectetur
-                        adipisicing elit. Voluptatum molestias, inventore
-                        mollitia earum perferendis necessitatibus doloremque!
-                        Quasi dolore consequatur perspiciatis tempora, similique
-                        ad, nemo vel natus placeat fuga debitis cupiditate alias
-                        et tenetur quam. Voluptatem, fugit dolorum nulla
-                        necessitatibus possimus voluptate sapiente iure eos
-                        ipsam consequuntur. Sunt neque laboriosam fugiat!</p>
-                    <figure>
-                        <img src="./images/image_f23ff820.png"
-                            alt="nature_image2" style="width: 100%;">
-                        <figcaption>Nature of Switzerland</figcaption>
-                    </figure>
-                </article>
-            </section>
-            <section>
-                <h1>Audio tag Introduction</h1>
-                <audio controls loop>
-                    <source
-                        src="./docs/audio/vadim_makes_sound-atlas-switzerland-560010.mp3"
-                        type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </section>
-            <section>
-                <h1>Introduction to iframe</h1>
-                <iframe width="100%" height="800px" src="https://www.youtube.com/embed/2KhOAkcI71E?si=v0TSOK8apgrAlqPm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
-        </main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </body>
+    <meta name="description"
+        content="A personal HTML learning website created by Varad to practice HTML5 elements and concepts.">
+
+    <title>Home | My HTML Learning Website</title>
+        <link rel="stylesheet" href="style.css">
+
+        
+</head>
+
+<body>
+
+    <!-- ==================== Header Start ==================== -->
+    <header>
+
+        <h1>Welcome to My Website</h1>
+
+        <!-- Main Navigation -->
+        <nav aria-label="Main navigation">
+            <a href="./index.html">Home</a> |
+            <a href="./about_us.html">About</a> |
+            <a href="./services.html">Services</a> |
+            <a href="./products.html">Products</a> |
+            <a href="./contact_us.html">Contact</a> |
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                Facebook
+            </a>
+        </nav>
+
+    </header>
+    <!-- ==================== Header End ==================== -->
+
+
+    <!-- ==================== Main Content Start ==================== -->
+    <main>
+
+        <!-- Introduction Section -->
+        <section>
+            <article>
+
+                <header>
+                    <h2>Hello Varad 👋</h2>
+                    <p>Welcome to my home page!</p>
+                </header>
+
+                <p>
+                    This website is created as part of my HTML learning journey.
+                    I am using this website to practice different HTML5 elements
+                    such as headings, paragraphs, images, figures, audio,
+                    navigation links, and iframes.
+                </p>
+
+                <p>
+                    The purpose of this project is to understand how a real
+                    website is structured using semantic HTML elements.
+                </p>
+
+                <!-- First Image -->
+                <figure>
+                    <img src="./images/image_c4468f1a.png"
+                        alt="Beautiful natural landscape"
+                        loading="lazy">
+
+                    <figcaption>
+                        A beautiful view of nature.
+                    </figcaption>
+                </figure>
+
+                <hr>
+
+                <!-- Second Image -->
+                <figure>
+                    <img src="./images/image_f23ff820.png"
+                        alt="Beautiful nature landscape of Switzerland"
+                        loading="lazy"
+                        width="100%">
+
+                    <figcaption>
+                        Nature of Switzerland
+                    </figcaption>
+                </figure>
+
+            </article>
+        </section>
+
+
+        <!-- ==================== Audio Section ==================== -->
+        <section>
+
+            <header>
+                <h2>Audio Tag Introduction</h2>
+            </header>
+
+            <p>
+                The HTML <code>&lt;audio&gt;</code> element is used to
+                embed sound or music into a web page.
+            </p>
+
+            <audio controls loop>
+                <source
+                    src="./docs/audio/vadim_makes_sound-atlas-switzerland-560010.mp3"
+                    type="audio/mpeg">
+
+                Your browser does not support the audio element.
+            </audio>
+
+        </section>
+
+
+        <!-- ==================== Iframe Section ==================== -->
+        <section>
+
+            <header>
+                <h2>Introduction to Iframe</h2>
+            </header>
+
+            <p>
+                The HTML <code>&lt;iframe&gt;</code> element allows another
+                webpage or external content to be embedded inside the current
+                webpage.
+            </p>
+
+            <iframe
+                width="100%"
+                height="800"
+                src="https://www.youtube.com/embed/2KhOAkcI71E?si=v0TSOK8apgrAlqPm"
+                title="YouTube video demonstrating iframe content"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+    </main>
+    <!-- ==================== Main Content End ==================== -->
+
+
+    <!-- ==================== Footer Start ==================== -->
+    <footer>
+
+        <hr>
+
+        <p>
+            &copy; 2026 Varad. All rights reserved.
+        </p>
+
+        <p>
+            This website is created for HTML learning and practice.
+        </p>
+
+    </footer>
+    <!-- ==================== Footer End ==================== -->
+
+</body>
+
 </html>
+
